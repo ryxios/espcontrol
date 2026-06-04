@@ -374,7 +374,7 @@ export default defineConfig({
     nav: [
       { text: 'Install', link: '/getting-started/install' },
       { text: 'Docs', link: '/' },
-      { text: 'GitHub', link: 'https://github.com/jtenniswood/espcontrol' },
+      { text: 'GitHub', link: 'https://github.com/ryxios/espcontrol' },
     ],
 
     sidebar: [
@@ -452,11 +452,11 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/jtenniswood/espcontrol/edit/main/docs/:path',
+      pattern: 'https://github.com/ryxios/espcontrol/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/jtenniswood/espcontrol' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/ryxios/espcontrol' }],
 
     search: {
       provider: 'local',
