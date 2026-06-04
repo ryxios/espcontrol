@@ -95,6 +95,25 @@
       "rotation": true,
       "ethernetManualInstall": false,
       "subpages": true
+    },
+    {
+      "slug": "esp32-s3-box-3",
+      "installSlug": "esp32-s3-box-3",
+      "name": "Espressif ESP32-S3-BOX-3",
+      "docsPath": "/screens/esp32-s3-box-3",
+      "screenSize": "2.4 inches",
+      "resolution": "320 x 240",
+      "orientation": "Landscape",
+      "slots": 4,
+      "grid": {
+        "rows": 2,
+        "cols": 2
+      },
+      "chipFamily": "ESP32-S3",
+      "relays": 0,
+      "rotation": true,
+      "ethernetManualInstall": false,
+      "subpages": true
     }
   ]
 }
