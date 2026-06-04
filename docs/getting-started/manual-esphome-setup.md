@@ -30,6 +30,7 @@ Each screen uses a different ESPHome package file. Pick the one that matches you
 | 4.3-inch JC4880P443 | `devices/guition-esp32-p4-jc4880p443/packages.yaml` |
 | 4-inch ESP32-P4 86 Panel | `devices/esp32-p4-86/packages.yaml` |
 | 4-inch 4848S040 | `devices/guition-esp32-s3-4848s040/packages.yaml` |
+| 2.4-inch ESP32-S3-BOX-3 | `devices/esp32-s3-box-3/packages.yaml` |
 
 ## ESPHome Device Builder
 
@@ -51,7 +52,7 @@ wifi:
 
 packages:
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: devices/guition-esp32-p4-jc1060p470/packages.yaml
     refresh: 1sec
 ```
@@ -80,11 +81,11 @@ Then add the `web_server_auth` package to your EspControl device YAML:
 ```yaml
 packages:
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: devices/guition-esp32-p4-jc1060p470/packages.yaml
     refresh: 1sec
   web_server_auth:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: common/addon/web_server_auth.yaml
     refresh: 1sec
 ```
@@ -113,7 +114,7 @@ substitutions:
 
 packages:
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: devices/esp32-p4-86/packages.yaml
     refresh: 1sec
 ```

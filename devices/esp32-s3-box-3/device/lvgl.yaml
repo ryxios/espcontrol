@@ -1,0 +1,86 @@
+# =============================================================================
+# LVGL MAIN PAGE - Top-layer HUD and button grid
+# =============================================================================
+# Defines the primary UI for the ESP32-S3-BOX-3 320x240 display: a top-layer
+# overlay with temperature/clock labels and a compact fixed 2x2 card grid.
+# =============================================================================
+
+lvgl:
+  # ---------------------------------------------------------------------------
+  # Top layer (always visible above all pages)
+  # ---------------------------------------------------------------------------
+  top_layer:
+    widgets:
+      # Indoor/outdoor temperature (top-left)
+      - label:
+          text: "-°C / -°C"
+          id: temperatures
+          text_font: font_text_small
+          align: top_left
+          x: 5
+          y: 5
+          text_color: 0xFFFFFF
+          hidden: true
+      # Clock (top-center, updated every minute by time.yaml)
+      - label:
+          text: "--:--"
+          id: display_time
+          text_font: font_text_small
+          align: top_mid
+          x: 0
+          y: 5
+          text_align: center
+          text_color: 0xFFFFFF
+          hidden: true
+      # Network status (tappable, right side of clock bar)
+      - obj:
+          id: network_status_button
+          align: top_right
+          x: -8
+          y: 2
+          width: 28
+          height: 26
+          bg_opa: 0%
+          border_width: 0
+          pad_all: 0
+          scrollable: false
+          scrollbar_mode: "off"
+          clickable: true
+          hidden: true
+          widgets:
+            - label:
+                id: network_status_icon_label
+                text: "\U000F0928"
+                text_font: font_icon_status
+                align: center
+                text_align: center
+                text_color: 0xFFFFFF
+          on_press:
+            then:
+              - script.execute: network_status_open_info
+
+  # ---------------------------------------------------------------------------
+  # Main page (fixed 2x2 grid of button widgets)
+  # ---------------------------------------------------------------------------
+  pages:
+    - id: main_page
+      scrollbar_mode: "off"
+      layout:
+        type: grid
+        grid_columns: [FR(1), FR(1)]
+        grid_rows: [FR(1), FR(1)]
+        pad_row: 6
+        pad_column: 6
+      width: 100%
+      bg_color: Black
+      bg_opa: cover
+      pad_top: ${main_page_pad_top}
+      pad_bottom: 3
+      pad_left: 4
+      pad_right: 4
+
+      widgets:
+        - !include { file: ../../../common/device/button_widget.yaml, vars: { num: "1" } }
+        - !include { file: ../../../common/device/button_widget.yaml, vars: { num: "2" } }
+        - !include { file: ../../../common/device/button_widget.yaml, vars: { num: "3" } }
+        - !include { file: ../../../common/device/button_widget.yaml, vars: { num: "4" } }
