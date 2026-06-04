@@ -48,7 +48,7 @@ wifi:
 
 packages:
   espcontrol:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: devices/esp32-s3-box-3/packages.yaml
     refresh: 1s
 ```

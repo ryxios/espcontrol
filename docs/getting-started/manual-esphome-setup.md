@@ -52,7 +52,7 @@ wifi:
 
 packages:
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: devices/guition-esp32-p4-jc1060p470/packages.yaml
     refresh: 1sec
 ```
@@ -81,11 +81,11 @@ Then add the `web_server_auth` package to your EspControl device YAML:
 ```yaml
 packages:
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: devices/guition-esp32-p4-jc1060p470/packages.yaml
     refresh: 1sec
   web_server_auth:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: common/addon/web_server_auth.yaml
     refresh: 1sec
 ```
@@ -114,7 +114,7 @@ substitutions:
 
 packages:
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/ryxios/espcontrol/
     file: devices/esp32-p4-86/packages.yaml
     refresh: 1sec
 ```
