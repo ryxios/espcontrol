@@ -10,8 +10,8 @@
 #     no board-audio abstraction today.
 #   - SD card, IMU, and PMOD expansion because EspControl does not consume them.
 #   - Dynamic touch-controller probing because ESPHome YAML must choose one static
-#     touch platform. Use packages.yaml for GT911 boards and packages-tt21100.yaml
-#     for TT21100 boards.
+#     touch platform. This slug selects TT21100; the base esp32-s3-box-3 slug
+#     remains the GT911 profile.
 # =============================================================================
 
 substitutions:
@@ -185,7 +185,7 @@ light:
 # ---------------------------------------------------------------------------
 # Physical buttons from BSP: boot/config GPIO0 and mute GPIO1.
 # The red circular home touch button is exposed by the selected touch controller
-# (${touchscreen_platform}; GT911 by default, TT21100 via packages-tt21100.yaml).
+# (${touchscreen_platform}; TT21100 for this variant).
 # ---------------------------------------------------------------------------
 binary_sensor:
   - platform: gpio

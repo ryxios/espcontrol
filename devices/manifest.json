@@ -673,7 +673,7 @@
     "esp32-s3-box-3": {
       "slots": 4,
       "public": {
-        "name": "Espressif ESP32-S3-BOX-3",
+        "name": "Espressif ESP32-S3-BOX-3 (GT911)",
         "docsPath": "/screens/esp32-s3-box-3",
         "screenSize": "2.4 inches",
         "resolution": "320 x 240",
@@ -792,7 +792,138 @@
             "main_page_compact_pad_top": "\"3\"",
             "clock_font_size": "\"96\"",
             "clock_cx": "\"160\"",
-            "clock_cy": "\"120\""
+            "clock_cy": "\"120\"",
+            "touchscreen_platform": "\"gt911\""
+          },
+          "deviceFontPackageKey": "fonts_device",
+          "apiNavigateAction": false
+        }
+      }
+    },
+    "esp32-s3-box-3-tt21100": {
+      "slots": 4,
+      "public": {
+        "name": "Espressif ESP32-S3-BOX-3 (TT21100)",
+        "docsPath": "/screens/esp32-s3-box-3-tt21100",
+        "screenSize": "2.4 inches",
+        "resolution": "320 x 240",
+        "orientation": "Landscape"
+      },
+      "layout": {
+        "cols": 2,
+        "rows": 2,
+        "firmwareGrid": "2x2"
+      },
+      "rotation": {
+        "enabled": true,
+        "options": [
+          "0",
+          "90",
+          "180",
+          "270"
+        ]
+      },
+      "web": {
+        "dragMode": "displace",
+        "dragAnimation": true,
+        "screen": {
+          "width": "45%",
+          "aspect": "320/240"
+        },
+        "portrait": {
+          "cols": 2,
+          "rows": 2,
+          "screen": {
+            "width": "34%",
+            "aspect": "240/320"
+          }
+        },
+        "topbar": {
+          "height": 12.0,
+          "padding": "1.88cqw 1.25cqw 1.25cqw",
+          "fontSize": 5.5
+        },
+        "grid": {
+          "top": 14.0,
+          "compactTop": 1.25,
+          "left": 1.56,
+          "right": 1.56,
+          "bottom": 1.25,
+          "gap": 2.5,
+          "fr": "1fr"
+        },
+        "btn": {
+          "radius": 2.0,
+          "padding": 3.0,
+          "iconSize": 13.5,
+          "labelSize": 5.5,
+          "labelLines": 2,
+          "labelLinesDouble": 3
+        },
+        "emptyCell": {
+          "radius": 2.0
+        },
+        "sensorBadge": {
+          "top": 2.5,
+          "right": 2.5,
+          "fontSize": 4.5
+        },
+        "subpageBadge": {
+          "bottom": 2.5,
+          "right": 2.5,
+          "fontSize": 5.5
+        }
+      },
+      "firmware": {
+        "build": {
+          "chip": "ESP32-S3"
+        },
+        "fonts": {
+          "icon": "font_icon_main",
+          "sensor": "font_number_value",
+          "largeSensor": "font_number_value_large",
+          "mediaTitle": "font_text_title",
+          "volumeNumber": "font_number_modal",
+          "volumeLabel": "font_text_body",
+          "climateCardIcon": "font_icon_card",
+          "subpageChevron": "font_icon_status",
+          "climateOptionTitle": "font_text_body",
+          "climateOptionValue": "font_text_small"
+        },
+        "display": {
+          "wrapTallLabels": false,
+          "subpageChevronX": 2,
+          "subpageChevronY": -1,
+          "subpageChevronTextWidthPercent": 96
+        },
+        "package": {
+          "subpageConfigChunks": 4,
+          "substitutions": {
+            "screen_width": "\"320\"",
+            "screen_height": "\"240\"",
+            "content_width": "\"280\"",
+            "setup_icon_font_id": "font_icon_main",
+            "setup_title_font_id": "font_text_title",
+            "setup_body_font_id": "font_text_body",
+            "setup_pad_row": "\"8\"",
+            "setup_loading_pad_row": "\"18\"",
+            "setup_action_button_width": "\"150\"",
+            "setup_action_button_height": "\"42\"",
+            "setup_action_button_radius": "\"8\"",
+            "icon_font": "font_icon_main",
+            "subpage_chevron_font": "font_icon_status",
+            "label_font": "font_text_body",
+            "media_title_font": "font_text_title",
+            "unit_font": "font_text_small",
+            "sensor_value_font": "font_number_value",
+            "padding": "10px",
+            "radius": "7px",
+            "main_page_pad_top": "\"34\"",
+            "main_page_compact_pad_top": "\"3\"",
+            "clock_font_size": "\"96\"",
+            "clock_cx": "\"160\"",
+            "clock_cy": "\"120\"",
+            "touchscreen_platform": "\"tt21100\""
           },
           "deviceFontPackageKey": "fonts_device",
           "apiNavigateAction": false

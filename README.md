@@ -62,7 +62,7 @@ EspControl supports several low-cost ESP32 touchscreens. Larger screens give you
 | Panel | [AliExpress ~£40](https://s.click.aliexpress.com/e/_c4W6TYvp) | [AliExpress ~£40](https://s.click.aliexpress.com/e/_c335W0r5) | [AliExpress ~£24](https://s.click.aliexpress.com/e/_c32jr3eN) | [AliExpress ~£45](https://s.click.aliexpress.com/e/_c3O6ndAX) | [AliExpress ~£16](https://s.click.aliexpress.com/e/_c3sIhvBv) |
 | 3D mount | [MakerWorld](https://makerworld.com/en/models/2490049-guition-p4-10inch-screen-stand#profileId-2736046) | [MakerWorld](https://makerworld.com/en/models/2387421-guition-esp32p4-jc1060p470-7inch-screen-desk-mount#profileId-2614995) | - | [MakerWorld](https://makerworld.com/en/models/2720366-waveshare-esp32-p4-smart-86-box-screen-desk-stand#profileId-3013481) | [MakerWorld](https://makerworld.com/en/models/2581572-guition-esp32s3-4848s040-case-stand#profileId-2847301) |
 
-EspControl also includes experimental support for the [Espressif ESP32-S3-BOX-3](https://jtenniswood.github.io/espcontrol/screens/esp32-s3-box-3), a 2.4-inch 320×240 ESP32-S3 development kit with 4 card slots.
+EspControl also includes experimental support for the [Espressif ESP32-S3-BOX-3 GT911](https://jtenniswood.github.io/espcontrol/screens/esp32-s3-box-3) and [ESP32-S3-BOX-3 TT21100](https://jtenniswood.github.io/espcontrol/screens/esp32-s3-box-3-tt21100) variants, a 2.4-inch 320×240 ESP32-S3 development kit with 4 card slots. Choose the profile that matches the touch controller fitted to your board.
 
 See the [screen guides](https://jtenniswood.github.io/espcontrol/getting-started/install) for full details on each model.
 

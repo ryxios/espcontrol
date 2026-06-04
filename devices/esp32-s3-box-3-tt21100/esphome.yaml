@@ -1,11 +1,9 @@
 # =============================================================================
-# ESPHOME ENTRY POINT - Espressif ESP32-S3-BOX-3 (GT911 touch)
+# ESPHOME ENTRY POINT - Espressif ESP32-S3-BOX-3 (TT21100 touch)
 # =============================================================================
 # User-facing config file. Set your device name and WiFi credentials here.
-# Use this default variant for ESP32-S3-BOX-3 boards with a GT911 touch
-# controller. TT21100 boards should use esphome-tt21100.yaml.
-# The remote package reference pulls in the full device configuration from
-# GitHub so the device stays up-to-date automatically.
+# Use this variant only for ESP32-S3-BOX-3 boards with a TT21100 touch
+# controller. GT911 boards should use devices/esp32-s3-box-3/esphome.yaml.
 # =============================================================================
 
 # ---------------------------------------------------------------------------
@@ -28,5 +26,5 @@ wifi:
 packages:
   setup:
     url: https://github.com/ryxios/espcontrol/
-    file: devices/esp32-s3-box-3/packages.yaml
+    file: devices/esp32-s3-box-3-tt21100/packages.yaml
     refresh: 1s

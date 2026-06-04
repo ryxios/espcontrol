@@ -1,5 +1,5 @@
 # =============================================================================
-# PACKAGES - ESPHome include manifest
+# PACKAGES - ESPHome include manifest (TT21100 touch variant)
 # =============================================================================
 # Load order follows dependencies: device and assets first, then config,
 # addons, and screens. Loading screen must be the first page so LVGL shows
@@ -7,8 +7,9 @@
 # =============================================================================
 
 substitutions:
-  device_slug: "esp32-s3-box-3"
-  firmware_manifest_slug: "esp32-s3-box-3"
+  device_slug: "esp32-s3-box-3-tt21100"
+  firmware_manifest_slug: "esp32-s3-box-3-tt21100"
+  touchscreen_platform: "tt21100"
   screen_width: "320"
   screen_height: "240"
   content_width: "280"
@@ -33,7 +34,6 @@ substitutions:
   clock_font_size: "96"
   clock_cx: "160"
   clock_cy: "120"
-  touchscreen_platform: "gt911"
   cover_art_size: "240"
   cover_art_x: "0"
   cover_art_y: "0"
